@@ -18,4 +18,56 @@ A Retrieval-Augmented Generation (RAG) application that allows users to upload a
 
 ![alt text](genai.drawio.png)
 
+## Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Samundra9999/AI-Notes-Assistant.git
+cd AI-Notes-Assistant
+```
+
+### 2. Create Virtual Environment
+```bash
+uv venv
+```
+Activate environment:
+- Windows
+```bash
+.venv\Scripts\activate
+```
+- Mac/Linux
+```bash
+source .venv/bin/activate
+```
+### 3. Install Dependencies
+- Using UV:
+```bash
+uv sync
+```
+- OR using pip:
+```bash
+pip install -r requirements.txt
+```  
+## Environment Variables
+Create a .env file in the project root:
+```bash
+GROQ_API_KEY=your_groq_api_key
+```  
+## Running the Application
+```bash
+streamlit run main.py
+```  
+
+## Usage
+- Launch the Streamlit application.
+- Upload a PDF document.
+- Enter a question related to the document.
+- Click Submit.
+- The system retrieves relevant content and generates an answer using the LLM.
+
+## Author
+
+Samundra Bhandari
+
+Aspiring AI/ML and Data Science Engineer.
 
