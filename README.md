@@ -61,12 +61,12 @@ streamlit run main.py
 If you don't want to install Python and project dependencies locally, you can run the application directly using Docker.
 - Pull the Docker Image
 ```bash
-docker pull samundra9/streamlit-app:latest
+docker pull samundra9/rag-app:latest
 ```  
 - Run the Docker Container
 Replace te GROQ_API_KEY with your actual Groq API key.
 ```bash
-docker run -p 8501:8501 -e GROQ_API_KEY=YOUR_GROQ_API_KEY samundra9/streamlit-app:latest
+docker run -p 8501:8501 -e GROQ_API_KEY=YOUR_GROQ_API_KEY samundra9/rag-app:latest
 ```  
 Once the container starts successfully, open:
 http://localhost:8501
