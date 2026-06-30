@@ -1,4 +1,4 @@
-# AI Notes Assistant
+# AI-Powered Document Intelligence System
 
 A Retrieval-Augmented Generation (RAG) application that allows users to upload a PDF document and ask natural language questions about its content. The system combines semantic search, keyword search, and a Large Language Model (LLM) to provide accurate, context-aware answers grounded in the uploaded document.
 
@@ -57,6 +57,19 @@ GROQ_API_KEY=your_groq_api_key
 ```bash
 streamlit run main.py
 ```  
+## Docker
+If you don't want to install Python and project dependencies locally, you can run the application directly using Docker.
+- Pull the Docker Image
+```bash
+docker pull samundra9/streamlit-app:latest
+```  
+- Run the Docker Container
+Replace te GROQ_API_KEY with your actual Groq API key.
+```bash
+docker run -p 8501:8501 -e GROQ_API_KEY=YOUR_GROQ_API_KEY samundra9/streamlit-app:latest
+```  
+Once the container starts successfully, open:
+http://localhost:8501
 
 ## Usage
 - Launch the Streamlit application.
